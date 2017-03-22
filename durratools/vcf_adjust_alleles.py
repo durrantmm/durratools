@@ -35,7 +35,7 @@ def _adjust_variant_record_simple(variant_rec, query_info, true_ref):
         print(_output_line(query_chrom, query_pos, query_id, query_ref, query_alt, GT, GT))
 
     elif query_alt == true_ref:
-        print(_output_line(query_chrom, query_pos, query_id, query_alt, query_ref, flip_genotype(GT), GT))
+        print(_output_line(query_chrom, query_pos, query_id, query_alt, query_ref, _flip_genotype(GT), GT))
 
     elif query_ref == _complement_base(true_ref):
         query_ref = _complement_base(query_ref)
