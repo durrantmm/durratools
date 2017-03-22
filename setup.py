@@ -101,7 +101,7 @@ setup(
     # pip to create the appropriate form of executable for the target platform.
     entry_points={
         'console_scripts': [
-            'durratools=durratools:main',
+            'durratools=durratools.__main__:main',
         ],
     },
 )
