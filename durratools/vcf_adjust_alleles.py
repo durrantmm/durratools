@@ -50,7 +50,6 @@ def _adjust_variant_record_simple(variant_rec, query_info, true_ref):
     else:
         print("UNEXPECTED")
         print(query_info, true_ref)
-        sys.exit()
 
 
 def _comparison_variants_are_equal(comp_info_rsid, comp_info_loc):
