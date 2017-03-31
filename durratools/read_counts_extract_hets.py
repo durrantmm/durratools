@@ -11,7 +11,7 @@ def extract_hets(input_read_counts_stream, input_vcf_stream, vcf_sample_name, ou
             print(counter, len(hets))
         counter += 1
 
-    header = input_read_counts_stream.readline().strip().split()
+    header = input_read_counts_stream.readline()
     for line in input_read_counts_stream:
         line = line.strip().split()
         chrom = line[0]
